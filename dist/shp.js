@@ -22748,6 +22748,7 @@ shp.parseZip = function(buffer, whiteList, encoding) {
   var zip = unzip(buffer);
   var names = [];
   encoding = encoding || "utf-8"
+  console.log(encoding)
   whiteList = whiteList || [];
   for (key in zip) {
     if (key.indexOf('__MACOSX') !== -1) {
