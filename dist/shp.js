@@ -22747,7 +22747,7 @@ shp.parseZip = function(buffer, whiteList, encoding) {
   buffer = toBuffer(buffer);
   var zip = unzip(buffer);
   var names = [];
-  encoding = encoding || "utf-8"
+  encoding = encoding || "SJIS"
   console.log(encoding)
   whiteList = whiteList || [];
   for (key in zip) {
